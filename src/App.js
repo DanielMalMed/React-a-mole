@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import MoleContainer from './components/MoleContainer.js'
+import './App.css';
 
 function App(){
     let [score, setScore] = useState(0)
@@ -21,11 +22,11 @@ function App(){
             </div>
         )
     }
-
     return (
         <div className="App">
             <h1>React-a-Mole!</h1>
-            {score}
+            <div className='score'>Score:{score}</div>
+            
             {createMoleHill()}
         </div>
     )
